@@ -19,6 +19,13 @@ export default function Hero() {
     setIsOpen(prev=>false)
   }
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       setIsNavScrolled(window.scrollY > 30);
@@ -68,16 +75,18 @@ export default function Hero() {
               { id: "portfolio", label: "Portfolio" },
               { id: "contact", label: "Contact Us" },
             ].map((item) => (
-              <a
+              <button
                 key={item.id}
-                href={`#${item.id}`}
-                className={`hover:text-secondary transition-all duration-300 ease-in-out ${
+                className={`hover:text-secondary cursor-pointer transition-all duration-300 ease-in-out ${
                   activeSection === item.id ? "text-secondary" : "text-white"
                 }`}
-                onClick={() => setIsOpen(false)}
+                onClick={() => {
+                  setIsOpen(false);
+                  scrollToSection(item.id);
+                }}
               >
                 {item.label}
-              </a>
+              </button>
             ))}
           </nav>
         </div>
@@ -103,31 +112,46 @@ export default function Hero() {
               <FiX />
             </button>
             <nav className="flex flex-col items-center gap-6 text-xl font-semibold">
-              <a href="#home" className="text-black"
-              onClick={handleMobileNavClick}
+              <button className="text-black"
+              onClick={() => {
+                setIsOpen(false);
+                scrollToSection("home");
+              }}
               >
                 Home
-              </a>
-              <a href="#about" className="text-black"
-              onClick={handleMobileNavClick}
+              </button>
+              <button className="text-black"
+              onClick={() => {
+                setIsOpen(false);
+                scrollToSection("about");
+              }}
               >
                 About Us
-              </a>
-              <a href="#services" className="text-black"
-              onClick={handleMobileNavClick}
+              </button>
+              <button className="text-black"
+              onClick={() => {
+                setIsOpen(false);
+                scrollToSection("services");
+              }}
               >
                 Services
-              </a>
-              <a href="#portfolio" className="text-black"
-              onClick={handleMobileNavClick}
+              </button>
+              <button className="text-black"
+              onClick={() => {
+                setIsOpen(false);
+                scrollToSection("portfolio");
+              }}
               >
                 Portfolio
-              </a>
-              <a href="#contact" className="text-black"
-              onClick={handleMobileNavClick}
+              </button>
+              <button className="text-black"
+              onClick={() => {
+                setIsOpen(false);
+                scrollToSection("contact");
+              }}
               >
                 Contact Us
-              </a>
+              </button>
               <button className="text-white bg-primary rounded-lg cursor-pointer px-6 py-3 mt-4"
               onClick={handleMobileNavClick}
               >
