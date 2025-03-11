@@ -90,19 +90,19 @@ export default function Hero() {
               <FiX />
             </button>
             <nav className="flex flex-col items-center gap-6 text-xl font-semibold">
-              <a href="#" className="text-black">
+              <a href="#home" className="text-black">
                 Home
               </a>
-              <a href="#" className="text-black">
+              <a href="#about" className="text-black">
                 About Us
               </a>
-              <a href="#" className="text-black">
+              <a href="#services" className="text-black">
                 Services
               </a>
-              <a href="#" className="text-black">
+              <a href="#portfolio" className="text-black">
                 Portfolio
               </a>
-              <a href="#" className="text-black">
+              <a href="#contact" className="text-black">
                 Contact Us
               </a>
               <button className="text-white bg-primary rounded-lg cursor-pointer px-6 py-3 mt-4">
