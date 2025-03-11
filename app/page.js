@@ -8,6 +8,7 @@ import CtaBanner from "./components/CtaBanner";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import WhyZeoley from "./components/WhyZeoley";
+import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   useEffect(() => {
@@ -45,6 +46,7 @@ export default function Home() {
       <ClientResults />
       <WhyZeoley />
       <ContactSection />
+      <Footer />
     </div>
   );
 }

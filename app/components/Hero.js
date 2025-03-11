@@ -8,6 +8,17 @@ export default function Hero() {
   const [isNavScrolled, setIsNavScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleMobileNavClick = () => {
+    setIsOpen(prev=>false)
+  }
+
   useEffect(() => {
     const handleScroll = () => {
       setIsNavScrolled(window.scrollY > 30);
@@ -70,7 +81,9 @@ export default function Hero() {
             ))}
           </nav>
         </div>
-        <button className="hidden lg:block text-white bg-primary rounded-lg cursor-pointer px-4 py-2">
+        <button className="hidden lg:block text-white bg-primary rounded-lg cursor-pointer px-4 py-2"
+        onClick={scrollToContact}
+        >
           Get Started
         </button>
 
@@ -85,27 +98,39 @@ export default function Hero() {
           <div className="fixed inset-0 bg-white flex flex-col items-center justify-center z-50">
             <button
               className="absolute top-6 right-6 text-3xl text-black"
-              onClick={() => setIsOpen(false)}
+              onClick={handleMobileNavClick}
             >
               <FiX />
             </button>
             <nav className="flex flex-col items-center gap-6 text-xl font-semibold">
-              <a href="#home" className="text-black">
+              <a href="#home" className="text-black"
+              onClick={handleMobileNavClick}
+              >
                 Home
               </a>
-              <a href="#about" className="text-black">
+              <a href="#about" className="text-black"
+              onClick={handleMobileNavClick}
+              >
                 About Us
               </a>
-              <a href="#services" className="text-black">
+              <a href="#services" className="text-black"
+              onClick={handleMobileNavClick}
+              >
                 Services
               </a>
-              <a href="#portfolio" className="text-black">
+              <a href="#portfolio" className="text-black"
+              onClick={handleMobileNavClick}
+              >
                 Portfolio
               </a>
-              <a href="#contact" className="text-black">
+              <a href="#contact" className="text-black"
+              onClick={handleMobileNavClick}
+              >
                 Contact Us
               </a>
-              <button className="text-white bg-primary rounded-lg cursor-pointer px-6 py-3 mt-4">
+              <button className="text-white bg-primary rounded-lg cursor-pointer px-6 py-3 mt-4"
+              onClick={handleMobileNavClick}
+              >
                 Get Started
               </button>
             </nav>
@@ -122,7 +147,9 @@ export default function Hero() {
             Drive results through smart strategies, optimized campaigns, and
             actionable insights. Let us help you reach your marketing goals.
           </div>
-          <button className="text-white bg-primary md:text-base text-sm rounded-md cursor-pointer px-8 py-2 mt-4">
+          <button className="text-white bg-primary md:text-base text-sm rounded-md cursor-pointer px-8 py-2 mt-4"
+          onClick={scrollToContact}
+          >
             GET STARTED
           </button>
         </div>

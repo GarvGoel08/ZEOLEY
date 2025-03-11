@@ -2,6 +2,12 @@
 import React from "react";
 
 const CtaBanner = () => {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section
     id="CTA"
@@ -15,8 +21,9 @@ const CtaBanner = () => {
         Request a Custom Marketing Plan
       </h2>
       <button
-        className="px-8 py-2.5 text-lg text-white bg-primary"
+        className="px-8 py-2.5 text-lg text-white bg-primary hover:cursor-pointer hover:bg-slate-800"
         aria-label="Request a custom marketing plan"
+        onClick={scrollToContact}
       >
         Request
       </button>
