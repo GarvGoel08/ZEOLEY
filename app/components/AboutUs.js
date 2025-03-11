@@ -2,6 +2,12 @@
 import React from "react";
 
 const AboutUs = () => {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section id="about" className="flex flex-col items-center px-5 py-14 w-full bg-white min-h-[662px] max-md:px-10 max-sm:px-5">
       <h1 className="mb-10 text-4xl font-bold leading-[49px] text-primary max-md:text-4xl max-sm:text-3xl">
@@ -22,7 +28,9 @@ const AboutUs = () => {
             focus on driving conversions, increasing sales, and maximizing your
             marketing ROI.
           </p>
-          <button className="px-8 py-2.5 text-lg leading-7 text-white cursor-pointer bg-primary hover:bg-slate-800 transition-colors w-fit">
+          <button className="px-8 py-2.5 text-lg leading-7 text-white cursor-pointer bg-primary hover:bg-slate-800 transition-colors w-fit"
+          onClick={scrollToContact}
+          >
             Contact Us
           </button>
         </article>
