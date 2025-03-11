@@ -49,7 +49,7 @@ const services = [
 
 const Services = () => {
   return (
-    <main className="px-20 py-10 w-full bg-white min-h-[screen] max-md:px-10 max-sm:px-5">
+    <section id="services" className="px-20 py-10 w-full bg-white min-h-[screen] max-md:px-10 max-sm:px-5">
       <h1 className="mb-16 text-4xl font-bold text-center text-primary max-md:text-3xl max-sm:text-3xl">
         Our Performance Marketing Services
       </h1>
@@ -63,7 +63,7 @@ const Services = () => {
           />
         ))}
       </div>
-    </main>
+    </section>
   );
 };
 

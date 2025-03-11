@@ -3,7 +3,8 @@ import React from "react";
 
 const CtaBanner = () => {
   return (
-    <div
+    <section
+    id="CTA"
       className="flex inset-0 mt-6 flex-col justify-center items-center bg-no-repeat bg-center bg-cover h-[366px]"
       style={{
         backgroundImage:
@@ -19,7 +20,7 @@ const CtaBanner = () => {
       >
         Request
       </button>
-    </div>
+    </section>
   );
 };
 
