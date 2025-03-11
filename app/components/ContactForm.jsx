@@ -31,7 +31,7 @@ const ContactForm = () => {
       const data = await response.json();
       if (response.ok) {
         setMessage("Email sent successfully!");
-        alert(message)
+        alert("Email sent successfully!")
         console.log(message)
         setFormData({
           fname:"",mail:"",pnumber:"",msg:""
@@ -98,8 +98,9 @@ const ContactForm = () => {
         <button
           type="submit"
           className="px-8 py-2.5 mx-auto my-0 w-48 text-lg text-white cursor-pointer bg-primary border-[none] max-sm:w-full"
+          disabled={loading}
         >
-          Send Message
+          {loading ? "Sending..." : "Send Message"}
         </button>
       </form>
     </div>
