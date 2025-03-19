@@ -1,4 +1,5 @@
 "use client"
+import { useState,useEffect } from "react";
 import Image from "next/image"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -9,6 +10,15 @@ import { Autoplay,Navigation } from 'swiper/modules';
 
 
 export default function OurClients(){
+    const [wth,setWth] = useState(window.innerWidth);
+
+    useEffect(()=>{
+      const handleResize = () => setWth(window.innerWidth);
+      window.addEventListener('resize', handleResize);
+  
+      return () => window.removeEventListener('resize', handleResize);
+    },[])
+
     const clients = [
         { name: "Amazon", logo: "/Clients/1.png" },
         { name: "Myntra", logo: "/Clients/2.svg" },
@@ -26,10 +36,10 @@ export default function OurClients(){
             <h2 className="my-12 text-5xl font-semibold font-poppins text-center text-primary max-md:text-4xl max-sm:mb-8 max-sm:text-3xl">
                 Our Clients
             </h2>
-            <div className="flex mx-20 my-10">
+            <div className="flex mx-5 md:mx-20 my-10">
 
             <Swiper 
-                slidesPerView={5}
+                slidesPerView={wth>640?6:3}
                 slidesPerGroup={1}
                 navigation={true}
                 loop={true}
