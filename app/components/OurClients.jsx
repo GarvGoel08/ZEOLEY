@@ -10,13 +10,15 @@ import { Autoplay,Navigation } from 'swiper/modules';
 
 
 export default function OurClients(){
-    const [wth,setWth] = useState(window.innerWidth);
+    const [wth,setWth] = useState(768);
 
     useEffect(()=>{
-      const handleResize = () => setWth(window.innerWidth);
-      window.addEventListener('resize', handleResize);
-  
-      return () => window.removeEventListener('resize', handleResize);
+        if (typeof window !== 'undefined') {
+            const handleResize = () => setWth(window.innerWidth);
+            window.addEventListener('resize', handleResize);
+        
+            return () => window.removeEventListener('resize', handleResize);
+        }
     },[])
 
     const clients = [
