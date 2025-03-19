@@ -11,8 +11,9 @@ const FormTextArea = ({ label,value,handleChange, placeholder, required = false 
         placeholder={placeholder}
         value={value}
         onChange={handleChange}
+        rows={2}
         required={required}
-        className="p-2.5 w-full text-base border-b border-solid resize-none border-[none] outline-none hover:border-secondary focus:border-secondary border-b-gray-900 h-[140px]"
+        className="p-2.5 w-full text-base border-b border-solid resize-none border-[none] outline-none hover:border-secondary focus:border-secondary border-b-gray-900"
       />
     </div>
   );

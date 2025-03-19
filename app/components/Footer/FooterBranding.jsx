@@ -1,4 +1,5 @@
 import React from "react";
+import FooterCopyright from "./FooterCopyright";
 
 const FooterBranding = () => {
   return (
@@ -9,6 +10,7 @@ const FooterBranding = () => {
       <p className="text-base max-w-[298px] text-stone-200 max-md:max-w-full">
         Maximize Your ROI with Data-Driven Performance Marketing
       </p>
+      <FooterCopyright/>
     </section>
   );
 };

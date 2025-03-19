@@ -22,13 +22,6 @@ const Footer = () => {
         <FooterContact />
         <FooterSocial />
       </div>
-
-      <div
-        className="my-10 w-full h-px bg-zinc-600 bg-opacity-60"
-        aria-hidden="true"
-      />
-
-      <FooterCopyright />
     </footer>
   );
 };

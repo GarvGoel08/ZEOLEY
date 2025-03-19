@@ -3,14 +3,22 @@ import React from "react";
 
 const ServiceCard = ({ image, title, description }) => {
   return (
-    <article className="flex flex-col items-center p-8 py-12 bg-white rounded-3xl shadow-lg hover:shadow-secondary transition-all duration-300 ease-in-out">
-      <img src={image} alt="" className="w-[80px] h-[80px] mb-[30px]" />
-      <h2 className="mb-5 text-3xl text-center text-black max-md:text-3xl max-sm:text-3xl">
-        {title}
-      </h2>
-      <p className="mb-10 text-lg text-center text-black max-md:text-base">
-        {description}
-      </p>
+    <article className="flex flex-col p-6 py-8 shadow-sm bg-neutral-100 rounded-3xl transition-all duration-300 ease-in-out">
+      <div className="flex flex-row items-start mb-2 gap-6 max-sm:flex-col">
+        <img
+          src={image}
+          alt=""
+          className="w-[50px] h-[50px] max-sm:w-[40px] max-sm:h-[40px] max-md:w-[40px] max-md:h-[40px]"
+        />
+        <div>
+          <h2 className="text-2xl font-semibold text-center text-black max-md:text-xl max-sm:text-lg">
+            {title}
+          </h2>
+          <p className="text-base max-sm:text-sm  text-black max-md:text-base">
+            {description}
+          </p>
+        </div>
+      </div>
     </article>
   );
 };

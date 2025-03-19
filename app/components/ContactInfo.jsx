@@ -4,10 +4,10 @@ const ContactInfo = () => {
   return (
     <aside className="p-10 bg-secondary w-[371px] max-md:w-full max-md:max-w-none max-sm:p-8 flex justify-center items-center">
       <div className="mx-auto my-0 text-center max-w-[277px]">
-        <h2 className="mb-8 text-3xl font-medium text-[#2c3e50] max-sm:text-2xl">
+        <h2 className="mb-8 max-md:mb-3 text-3xl font-medium text-[#2c3e50] max-sm:text-2xl">
           How To Reach Us
         </h2>
-        <div className="my-5">
+        <div className="my-5 max-md:hidden">
           <svg
             width="80"
             height="80"
@@ -22,7 +22,7 @@ const ContactInfo = () => {
             />
           </svg>
         </div>
-        <p className="mt-8 text-base leading-5 text-black">
+        <p className="mt-8 max-md:mt-1 text-base leading-5 text-black">
           Reach out to us through the form and we will reach out to you!
         </p>
       </div>
