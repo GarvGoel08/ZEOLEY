@@ -11,8 +11,8 @@ const ContactSection = () => {
         "linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('/ContactUs.png')",
     }}>
 
-      <div className="relative px-5 py-10 mx-auto my-0 max-w-[1440px]">
-        <div className="flex mx-auto my-0 max-w-[1227px] max-md:flex-col">
+      <div className="flex flex-row w-full px-5 py-20 justify-center my-0 ">
+        <div className="flex my-0 max-md:flex-col">
           <ContactInfo />
           <ContactForm />
         </div>

@@ -54,56 +54,71 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="grow p-10 bg-white max-md:w-full max-sm:p-5">
-      <form onSubmit={handleSubmit} className="mx-auto my-0 max-w-[782px]">
-        <FormInput label="Name" type="text" value={formData.fname} handleChange={(e)=>{
-          setFormData({ ...formData, fname: e.target.value });
-        }} placeholder="E.g. John" required />
-        <FormInput
-          label="Email Address"
-          type="email"
-          value={formData.mail}
-          handleChange={(e)=>{
-            setFormData({ ...formData, mail: e.target.value });
-          }}
-          placeholder="E.g. john@doe.com"
-          required
-        />
-        <FormInput
-          label="Phone Number"
-          type="tel"
-          value={formData.pnumber}
-          handleChange={(e)=>{
-            setFormData({ ...formData, pnumber: e.target.value });
-          }}
-          placeholder="E.g. +1 3004005000"
-        />
-        <FormTextArea label="Message" value={formData.msg} handleChange={(e)=>{
-          setFormData({ ...formData, msg: e.target.value });
-        }} 
-        placeholder="Enter your message..." />
+<div className="w-[60%] p-6 bg-white  max-md:w-full max-sm:p-3">
+  <form onSubmit={handleSubmit} className="mx-auto my-0 p-6">
+    <FormInput
+      label="Name"
+      type="text"
+      value={formData.fname}
+      handleChange={(e) => setFormData({ ...formData, fname: e.target.value })}
+      placeholder="E.g. John"
+      required
+    />
 
-        <div className="flex gap-2.5 items-center mb-5">
-          <input
-            type="checkbox"
-            id="authorize"
-            className="w-4 h-4 rounded-sm bg-[#2c3e50]"
+  <div className="flex flex-col sm:flex-row gap-4">
+        <div className="flex-1">
+          <FormInput
+            label="Email Address"
+            type="email"
+            value={formData.mail}
+            handleChange={(e) =>
+              setFormData({ ...formData, mail: e.target.value })
+            }
+            placeholder="E.g. john@doe.com"
+            required
           />
-          <label htmlFor="authorize" className="text-xs text-stone-500">
-            I Authorize Zeoley to send notifications via
-            SMS/RCS/Call/Email/Whatsapp
-          </label>
         </div>
+        <div className="flex-1">
+          <FormInput
+            label="Phone Number"
+            type="tel"
+            value={formData.pnumber}
+            handleChange={(e) =>
+              setFormData({ ...formData, pnumber: e.target.value })
+            }
+            placeholder="E.g. +91 999XXXXXXX"
+          />
+        </div>
+      </div>
 
-        <button
-          type="submit"
-          className="px-8 py-2.5 mx-auto my-0 w-48 text-lg text-white cursor-pointer bg-primary border-[none] max-sm:w-full"
-          disabled={loading}
-        >
-          {loading ? "Sending..." : "Send Message"}
-        </button>
-      </form>
+    <FormTextArea
+      label="Message"
+      value={formData.msg}
+      handleChange={(e) => setFormData({ ...formData, msg: e.target.value })}
+      placeholder="Enter your message..."
+    />
+
+    <div className="flex gap-2 items-center mb-4">
+      <input
+        type="checkbox"
+        id="authorize"
+        className="w-4 h-4 rounded-sm bg-[#2c3e50]"
+      />
+      <label htmlFor="authorize" className="text-xs text-stone-500">
+        I Authorize Zeoley to send notifications via SMS/RCS/Call/Email/Whatsapp
+      </label>
     </div>
+
+    <button
+      type="submit"
+      className="px-6 py-3 mx-auto my-0 text-lg text-white cursor-pointer bg-primary border-none max-sm:w-full"
+      disabled={loading}
+    >
+      {loading ? "Sending..." : "Send Message"}
+    </button>
+  </form>
+</div>
+
   );
 };
 
