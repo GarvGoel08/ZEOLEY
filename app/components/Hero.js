@@ -61,8 +61,8 @@ export default function Hero() {
       }}
     >
       <div
-        className={`w-full fixed font-poppins lg:px-28 px-8 flex justify-between items-center z-50 py-4 transition-all duration-300 delay-100 ease-in-out  ${
-          isNavScrolled ? "bg-black/90 shadow-md" : "bg-transparent"
+        className={`w-full font-poppins lg:px-28 px-8 flex justify-between items-center z-50 py-4 transition-all duration-300 delay-100 ease-in-out  ${
+          isNavScrolled ? "bg-black/90 shadow-md fixed" : "bg-transparent"
         }`}
       >
         <p className="text-secondary font-geist-mono text-4xl">ZEOLEY</p>
@@ -163,7 +163,7 @@ export default function Hero() {
       </div>
 
       <div className="grow text-white">
-        <div className="h-full mt-[2.4%] lg:w-[60%] lg:pr-0 md:px-24 px-8 flex flex-col gap-4 justify-center items-start">
+        <div className="h-full lg:w-[60%] lg:pr-0 md:px-24 px-8 flex flex-col gap-4 justify-center items-start">
           <div className="md:text-6xl text-2xl font-medium">
             Maximize Your ROI with Data-Driven Performance Marketing
           </div>
