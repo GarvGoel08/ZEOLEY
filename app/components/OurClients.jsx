@@ -45,7 +45,7 @@ export default function OurClients(){
                 loop={true}
                 autoplay={{
                     delay: 500, // Slides will change every 500ms
-                    disableOnInteraction: false, // Keeps autoplay running after interaction
+                    disableOnInteraction: false, 
                 }}
                 modules={[Navigation ,Autoplay]}
                 className="mySwiper">
