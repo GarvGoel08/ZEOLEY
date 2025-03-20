@@ -72,7 +72,7 @@ export default function Hero() {
               { id: "home", label: "Home" },
               { id: "about", label: "About Us" },
               { id: "services", label: "Services" },
-              { id: "portfolio", label: "Portfolio" },
+              { id: "advertiser", label: "Advertiser" },
               { id: "contact", label: "Contact Us" },
             ].map((item) => (
               <button
@@ -139,10 +139,10 @@ export default function Hero() {
               <button className="text-black"
               onClick={() => {
                 setIsOpen(false);
-                scrollToSection("portfolio");
+                scrollToSection("advertiser");
               }}
               >
-                Portfolio
+                Advertiser
               </button>
               <button className="text-black"
               onClick={() => {
