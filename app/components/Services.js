@@ -53,7 +53,7 @@ const Services = () => {
       <h1 className="mb-16 text-4xl font-bold font-poppins text-center text-primary max-md:text-3xl max-sm:text-3xl">
         Our Performance Marketing Services
       </h1>
-      <div className="grid xl:grid-cols-3 gap-16 sm:grid-cols-2 grid-cols-1">
+      <div className="grid xl:grid-cols-3 gap-10 md:gap-16 sm:grid-cols-2 grid-cols-1">
         {services.map((service, index) => (
           <ServiceCard
             key={index}
