@@ -73,6 +73,7 @@ export default function Hero() {
               { id: "about", label: "About Us" },
               { id: "services", label: "Services" },
               { id: "advertiser", label: "Advertiser" },
+              { id: "publisher", label:"Publisher" },
               { id: "contact", label: "Contact Us" },
             ].map((item) => (
               <button
@@ -143,6 +144,14 @@ export default function Hero() {
               }}
               >
                 Advertiser
+              </button>
+              <button className="text-black"
+              onClick={() => {
+                setIsOpen(false);
+                scrollToSection("publisher");
+              }}
+              >
+                Publisher
               </button>
               <button className="text-black"
               onClick={() => {

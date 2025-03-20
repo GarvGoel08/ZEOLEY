@@ -4,8 +4,8 @@ import Image from 'next/image'
 
 function AdvertiserSection() {
   return (
-    <section id='advertiser' className='flex flex-col gap-4 my-10 mx-5 md:mx-30'>
-      <div className='flex flex-col md:flex-row justify-center gap-10'>
+    <div className='flex flex-col gap-4 my-10 mx-5 md:mx-30'>
+      <section id='advertiser' className='flex flex-col md:flex-row justify-center gap-10'>
         <div className='w-full md:w-2/3 flex flex-col justify-center gap-5'>
             <h2 className='text-primary font-poppins max-md:self-center text-3xl font-medium'>
                 Advertiser
@@ -27,8 +27,8 @@ function AdvertiserSection() {
             />
         </div>
 
-      </div>
-      <div className='flex flex-col md:flex-row justify-center gap-10'>
+      </section>
+      <section id='publisher' className='flex flex-col md:flex-row justify-center gap-10'>
       <div className='w-full md:w-1/3'>
             <Image
                 src={"/Publisher/2.svg"}
@@ -51,8 +51,8 @@ function AdvertiserSection() {
         </div>
 
 
-      </div>
-    </section>
+      </section>
+    </div>
   )
 }
 
