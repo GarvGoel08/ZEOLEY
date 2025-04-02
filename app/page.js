@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import AboutUs from "./components/AboutUs";
 import ClientResults from "./components/ClientResults";
 import ContactSection from "./components/ContactSection";
-import CtaBanner from "./components/CtaBanner";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import MarketingSection from "./components/MarketingSection";
@@ -45,7 +44,6 @@ export default function Home() {
       <Hero />
       <AboutUs />
       <Services />
-      <CtaBanner />
       <AdvertiserSection/>
       <MarketingSection/>
       <OurClients/>
