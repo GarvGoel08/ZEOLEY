@@ -7,6 +7,9 @@ import ContactSection from "./components/ContactSection";
 import CtaBanner from "./components/CtaBanner";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
+import MarketingSection from "./components/MarketingSection";
+import OurClients from "./components/OurClients";
+import AdvertiserSection from "./components/AdvertiserSection";
 import WhyZeoley from "./components/WhyZeoley";
 import Footer from "./components/Footer/Footer";
 
@@ -43,7 +46,9 @@ export default function Home() {
       <AboutUs />
       <Services />
       <CtaBanner />
-      <ClientResults />
+      <AdvertiserSection/>
+      <MarketingSection/>
+      <OurClients/>
       <WhyZeoley />
       <ContactSection />
       <Footer />

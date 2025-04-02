@@ -61,18 +61,19 @@ export default function Hero() {
       }}
     >
       <div
-        className={`w-full lg:px-28 px-8 flex justify-between items-center z-50 py-4  ${
-          isNavScrolled ? "bg-black/90 fixed" : "relative"
+        className={`w-full font-poppins lg:px-28 px-8 flex justify-between items-center z-50 py-4 transition-all duration-300 delay-100 ease-in-out  ${
+          isNavScrolled ? "bg-black/90 shadow-md fixed" : "bg-transparent"
         }`}
       >
         <p className="text-secondary font-geist-mono text-4xl">ZEOLEY</p>
         <div className="hidden lg:flex flex-row">
-          <nav className="flex flex-row items-center gap-12">
+          <nav className="flex flex-row items-center gap-10">
             {[
               { id: "home", label: "Home" },
               { id: "about", label: "About Us" },
               { id: "services", label: "Services" },
-              { id: "portfolio", label: "Portfolio" },
+              { id: "advertiser", label: "Advertiser" },
+              { id: "publisher", label:"Publisher" },
               { id: "contact", label: "Contact Us" },
             ].map((item) => (
               <button
@@ -139,10 +140,18 @@ export default function Hero() {
               <button className="text-black"
               onClick={() => {
                 setIsOpen(false);
-                scrollToSection("portfolio");
+                scrollToSection("advertiser");
               }}
               >
-                Portfolio
+                Advertiser
+              </button>
+              <button className="text-black"
+              onClick={() => {
+                setIsOpen(false);
+                scrollToSection("publisher");
+              }}
+              >
+                Publisher
               </button>
               <button className="text-black"
               onClick={() => {
@@ -164,7 +173,7 @@ export default function Hero() {
 
       <div className="grow text-white">
         <div className="h-full lg:w-[60%] lg:pr-0 md:px-24 px-8 flex flex-col gap-4 justify-center items-start">
-          <div className="md:text-6xl text-3xl font-semibold">
+          <div className="md:text-6xl text-2xl font-medium">
             Maximize Your ROI with Data-Driven Performance Marketing
           </div>
           <div className="md:text-xl text-lg mt-2 text-secondary">

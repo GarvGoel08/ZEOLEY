@@ -15,5 +15,7 @@ html {
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
   --color-tertiary: var(--tertiary);
+  --font-poppins: "Poppins" , "sans-serif"
 }
+
 

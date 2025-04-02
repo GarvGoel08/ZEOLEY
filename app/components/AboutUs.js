@@ -9,7 +9,7 @@ const AboutUs = () => {
     }
   };
   return (
-    <section id="about" className="flex flex-col items-center px-5 py-14 w-full bg-white min-h-[662px] max-md:px-10 max-sm:px-5">
+    <section id="about" className="flex flex-col font-poppins items-center px-5 py-14 w-full bg-white min-h-[662px] max-md:px-10 max-sm:px-5">
       <h1 className="mb-10 text-4xl font-bold leading-[49px] text-primary max-md:text-4xl max-sm:text-3xl">
         About Us
       </h1>
@@ -34,14 +34,13 @@ const AboutUs = () => {
             Contact Us
           </button>
         </article>
-        <article className="flex flex-col gap-11 w-full max-w-[424px]">
+        <article className="flex flex-col gap-11 w-full max-w-[600px]">
           <div className="flex flex-col gap-1.5">
             <h2 className="text-3xl font-bold leading-10 text-secondary max-md:text-3xl max-sm:text-2xl">
               Our Mission:
             </h2>
             <p className="text-base leading-6 text-zinc-700">
-              To deliver performance marketing solutions that help brands grow
-              and achieve sustainable results.
+            We are dedicated to delivering performance marketing solutions that empower brands to grow and achieve sustainable, long-term success. Through data-driven strategies and innovative practices, we help businesses reach their full potential with measurable results.
             </p>
           </div>
           <div className="flex flex-col gap-1.5">
@@ -49,9 +48,7 @@ const AboutUs = () => {
               Our Approach:
             </h2>
             <p className="text-base leading-6 text-zinc-700">
-              We use data analytics, digital tools, and a combination of paid
-              search, social media, and email marketing to craft campaigns that
-              perform.
+            We leverage data analytics, digital tools, and multi-channel marketing to craft high-impact campaigns. By combining paid search, social media, and email marketing, we drive targeted traffic, boost engagement, and nurture leads with personalized campaigns. Through continuous optimization and performance tracking, we ensure maximum ROI and impactful growth.
             </p>
           </div>
         </article>
