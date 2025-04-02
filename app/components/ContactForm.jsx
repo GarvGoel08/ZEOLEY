@@ -1,11 +1,14 @@
 "use client";
-import React,{useState} from "react";
+import React, { useState } from "react";
 import FormInput from "./FormInput";
 import FormTextArea from "./FormTextArea";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    fname:"",mail:"",pnumber:"",msg:""
+    fname: "",
+    mail: "",
+    pnumber: "",
+    msg: "",
   });
 
   const [loading, setLoading] = useState(false);
@@ -25,63 +28,77 @@ const ContactForm = () => {
       const response = await fetch("/api/sendEmail", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({formData}),
+        body: JSON.stringify({ formData }),
       });
 
       const data = await response.json();
       if (response.ok) {
         setMessage("Email sent successfully!");
-        alert("Email sent successfully!")
-        console.log(message)
+        alert("Email sent successfully!");
+        console.log(message);
         setFormData({
-          fname:"",mail:"",pnumber:"",msg:""
-        })
+          fname: "",
+          mail: "",
+          pnumber: "",
+          msg: "",
+        });
       } else {
         setMessage(data.message || "Failed to send email");
-        console.log(message)
-        alert(message)
+        console.log(message);
+        alert(message);
       }
     } catch (error) {
       setMessage("An error occurred. Please try again.");
-      console.log(message)
-      alert(message)
+      console.log(message);
+      alert(message);
     }
-    
 
     setLoading(false);
-    
-    
   };
 
   return (
     <div className="grow p-10 bg-white max-md:w-full max-sm:p-5">
-      <form onSubmit={handleSubmit} className="mx-auto my-0 max-w-[782px]">
-        <FormInput label="Name" type="text" value={formData.fname} handleChange={(e)=>{
-          setFormData({ ...formData, fname: e.target.value });
-        }} placeholder="E.g. John" required />
+        <h2 className="text-4xl font-bold text-gray-900 mb-8">Contact Us</h2>
+        <form onSubmit={handleSubmit} className="mx-auto my-0 max-w-[782px]">
         <FormInput
-          label="Email Address"
-          type="email"
-          value={formData.mail}
-          handleChange={(e)=>{
-            setFormData({ ...formData, mail: e.target.value });
+          label="Name"
+          type="text"
+          value={formData.fname}
+          handleChange={(e) => {
+            setFormData({ ...formData, fname: e.target.value });
           }}
-          placeholder="E.g. john@doe.com"
+          placeholder="E.g. John"
           required
         />
-        <FormInput
-          label="Phone Number"
-          type="tel"
-          value={formData.pnumber}
-          handleChange={(e)=>{
-            setFormData({ ...formData, pnumber: e.target.value });
+        <div className="flex flex-col sm:flex-row gap-2">
+          <FormInput
+            label="Email Address"
+            type="email"
+            value={formData.mail}
+            handleChange={(e) => {
+              setFormData({ ...formData, mail: e.target.value });
+            }}
+            placeholder="E.g. john@doe.com"
+            required
+          />
+          <FormInput
+            label="Phone Number"
+            type="tel"
+            value={formData.pnumber}
+            handleChange={(e) => {
+              setFormData({ ...formData, pnumber: e.target.value });
+            }}
+            placeholder="E.g. +1 3004005000"
+          />
+        </div>
+        <FormTextArea
+          label="Message"
+          value={formData.msg}
+          handleChange={(e) => {
+            setFormData({ ...formData, msg: e.target.value });
           }}
-          placeholder="E.g. +1 3004005000"
+          placeholder="Enter your message..."
         />
-        <FormTextArea label="Message" value={formData.msg} handleChange={(e)=>{
-          setFormData({ ...formData, msg: e.target.value });
-        }} 
-        placeholder="Enter your message..." />
 
         <div className="flex gap-2.5 items-center mb-5">
           <input
