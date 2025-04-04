@@ -55,14 +55,10 @@ export default function Hero() {
     <section
       className="h-screen bg-no-repeat bg-cover bg-center flex flex-col"
       id="home"
-      style={{
-        backgroundImage:
-          "linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('/hero.png')",
-      }}
     >
       <div
-        className={`w-full font-poppins lg:px-28 px-8 flex justify-between items-center z-50 py-4 transition-all duration-300 delay-100 ease-in-out  ${
-          isNavScrolled ? "bg-black/90 shadow-md fixed" : "bg-transparent"
+        className={`w-full bg-black/90 fixed font-poppins lg:px-28 px-8 flex justify-between items-center z-50 py-4 transition-all duration-300 delay-100 ease-in-out  ${
+          isNavScrolled ? "py-2 shadow-lg" : "py-5 shadow-md bg-white"
         }`}
       >
         <p className="text-secondary font-geist-mono text-4xl">ZEOLEY</p>
@@ -79,8 +75,8 @@ export default function Hero() {
               <button
                 key={item.id}
                 className={`hover:text-secondary cursor-pointer transition-all duration-300 ease-in-out ${
-                  activeSection === item.id ? "text-secondary" : "text-white"
-                }`}
+                  activeSection === item.id ? `${isNavScrolled? "text-secondary" :"text-[#FF7700]"}` : `${isNavScrolled? "text-white" :"text-black"}`
+                } `}
                 onClick={() => {
                   setIsOpen(false);
                   scrollToSection(item.id);
@@ -171,20 +167,26 @@ export default function Hero() {
         )}
       </div>
 
-      <div className="grow text-white">
-        <div className="h-full lg:w-[60%] lg:pr-0 md:px-24 px-8 flex flex-col gap-4 justify-center items-start">
-          <div className="md:text-6xl text-2xl font-medium">
+      <div className="grow text-white flex pt-20 flex-col md:flex-row gap-5 mx-auto">
+        <div className="h-full lg:w-[50%] lg:pr-0 md:px-24 px-8 flex flex-col gap-4 justify-center items-start">
+          <div className="md:text-5xl text-2xl font-poppins text-primary font-semibold">
             Maximize Your ROI with Data-Driven Performance Marketing
           </div>
-          <div className="md:text-xl text-lg mt-2 text-secondary">
+          <div className="md:text-xl text-lg mt-2 text-[#FF7700]">
             Drive results through smart strategies, optimized campaigns, and
-            actionable insights. Let us help you reach your marketing goals.
+            actionable insights. Let us help you resach your marketing goals.
           </div>
-          <button className="text-white bg-primary md:text-base text-sm rounded-md cursor-pointer px-8 py-2 mt-4"
+          <button className="text-white bg-primary md:text-base text-sm rounded-md cursor-pointer px-8 py-3 mt-4"
           onClick={scrollToContact}
           >
             GET STARTED
           </button>
+        </div>
+        <div className="w-full lg:w-[40%] self-center">
+          <img
+            src={`/heroImage.svg`}
+            className="object-cover  "
+            />
         </div>
       </div>
     </section>
