@@ -3,6 +3,7 @@
 :root {
   --primary: #2c3e50;
   --secondary: #ff9900;
+  --secondaryalt: #ff7700;
   --tertiary: #ffffff;
 }
 
@@ -14,6 +15,7 @@ html {
 @theme inline {
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
+  --color-secondaryalt: var(--secondaryalt);
   --color-tertiary: var(--tertiary);
   --font-poppins: "Poppins" , "sans-serif"
 }
