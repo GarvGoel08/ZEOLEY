@@ -28,11 +28,11 @@ const AboutUs = () => {
             focus on driving conversions, increasing sales, and maximizing your
             marketing ROI.
           </p>
-          <button className="px-8 py-2.5 text-lg leading-7 text-white cursor-pointer bg-primary hover:bg-slate-800 transition-colors w-fit"
+          {/* <button className="px-8 py-2.5 text-lg leading-7 text-white cursor-pointer bg-primary hover:bg-slate-800 transition-colors w-fit"
           onClick={scrollToContact}
           >
             Contact Us
-          </button>
+          </button> */}
         </article>
         <article className="flex flex-col gap-11 w-full max-w-[600px]">
           <div className="flex flex-col gap-1.5">
