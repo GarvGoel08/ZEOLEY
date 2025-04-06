@@ -3,7 +3,7 @@ import React from "react";
 
 const ServiceCard = ({ image, title, description }) => {
   return (
-    <article className="flex flex-col p-4 md:p-6 md:py-6 shadow-sm hover:shadow-amber-500 hover:shadow-lg bg-neutral-100 rounded-3xl transition-all duration-300 ease-in-out">
+    <article className="flex flex-col p-4 md:p-6 md:py-6 shadow-sm hover:shadow-secondary hover:shadow-lg bg-neutral-100 rounded-3xl transition-all duration-300 ease-in-out">
       <div className="flex flex-row items-start mb-2 gap-2 md:gap-6 max-sm:flex-col">
         <img
           src={image}
@@ -11,10 +11,10 @@ const ServiceCard = ({ image, title, description }) => {
           className="w-[50px] h-[50px] self-center "
         />
         <div className="flex flex-col items-start max-md:items-center">
-          <h2 className="text-2xl font-semibold text-center text-black max-md:text-xl max-sm:text-lg">
+          <h2 className="text-2xl font-semibold max-md:text-center text-textblack max-md:text-xl max-sm:text-lg">
             {title}
           </h2>
-          <p className="text-base max-md:text-center max-sm:text-sm  text-black max-md:text-base">
+          <p className="text-base max-md:text-center max-sm:text-sm text-textblack max-md:text-base">
             {description}
           </p>
         </div>

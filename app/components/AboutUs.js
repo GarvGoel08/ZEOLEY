@@ -9,7 +9,7 @@ const AboutUs = () => {
     }
   };
   return (
-    <section id="about" className="flex flex-col font-poppins items-center px-5 py-14 w-full bg-white min-h-[662px] max-md:px-10 max-sm:px-5">
+    <section id="about" className="flex flex-col items-center px-5 py-14 w-full bg-white min-h-[662px] max-md:px-10 max-sm:px-5">
       <h1 className="mb-10 text-4xl font-bold leading-[49px] text-primary max-md:text-4xl max-sm:text-3xl">
         About Us
       </h1>

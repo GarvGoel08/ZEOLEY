@@ -3,17 +3,18 @@
 :root {
   --primary: #2c3e50;
   --secondary: #FC4C69;
-  --secondaryalt: #ff2347;
+  --secondaryalt: #ED1544;
   --tertiary: #ffffff;
+  --textblack: #262626
 }
 
 html {
   scroll-behavior: smooth;
-  font-family: "Akagi_Pro";
 }
 
 
 @theme inline {
+  --color-textblack: var(--textblack);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
   --color-secondaryalt: var(--secondaryalt);
