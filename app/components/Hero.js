@@ -53,7 +53,7 @@ export default function Hero() {
   }, []);
   return (
     <section
-      className="h-screen bg-no-repeat bg-cover bg-center flex flex-col"
+      className="min-h-screen bg-no-repeat bg-cover bg-center flex flex-col"
       id="home"
     >
       <div
@@ -113,7 +113,7 @@ export default function Hero() {
               <FiX />
             </button>
             <nav className="flex flex-col items-center gap-6 text-xl font-semibold">
-              <button className="text-black"
+              <button className="text-textblack"
               onClick={() => {
                 setIsOpen(false);
                 scrollToSection("home");
@@ -121,7 +121,7 @@ export default function Hero() {
               >
                 Home
               </button>
-              <button className="text-black"
+              <button className="text-textblack"
               onClick={() => {
                 setIsOpen(false);
                 scrollToSection("about");
@@ -129,7 +129,7 @@ export default function Hero() {
               >
                 About Us
               </button>
-              <button className="text-black"
+              <button className="text-textblack"
               onClick={() => {
                 setIsOpen(false);
                 scrollToSection("services");
@@ -137,7 +137,7 @@ export default function Hero() {
               >
                 Services
               </button>
-              <button className="text-black"
+              <button className="text-textblack"
               onClick={() => {
                 setIsOpen(false);
                 scrollToSection("advertiser");
@@ -145,7 +145,7 @@ export default function Hero() {
               >
                 Advertiser
               </button>
-              <button className="text-black"
+              <button className="text-textblack"
               onClick={() => {
                 setIsOpen(false);
                 scrollToSection("publisher");
@@ -153,7 +153,7 @@ export default function Hero() {
               >
                 Publisher
               </button>
-              <button className="text-black"
+              <button className="text-textblack"
               onClick={() => {
                 setIsOpen(false);
                 scrollToSection("contact");
@@ -161,7 +161,7 @@ export default function Hero() {
               >
                 Contact Us
               </button>
-              <button className="text-white bg-primary rounded-lg cursor-pointer px-6 py-3 mt-4"
+              <button className="text-white bg-secondaryalt rounded-lg cursor-pointer px-6 py-3 mt-4"
               onClick={handleMobileNavClick}
               >
                 Get Started
@@ -171,14 +171,14 @@ export default function Hero() {
         )}
       </div>
 
-      <div className="grow text-white flex pt-20 flex-col lg:flex-row gap-5 mx-auto">
-        <div className="h-full lg:w-[50%] lg:pr-0 md:px-24 px-8 flex flex-col gap-4 justify-center items-start">
+      <div className="grow text-white flex pt-20 flex-col lg:flex-row gap-5 mx-auto overflow-hidden">
+        <div className="h-full my-auto lg:w-[50%] lg:pr-0 md:px-24 px-8 flex flex-col gap-4 justify-center items-start">
           <div className="md:text-5xl text-2xl font-poppins max-md:text-center text-primary font-semibold">
             Maximize Your ROI with Data-Driven Performance Marketing
           </div>
           <div className="md:text-xl text-lg mt-2 text-secondaryalt max-md:text-center">
             Drive results through smart strategies, optimized campaigns, and
-            actionable insights. Let us help you resach your marketing goals.
+            actionable insights. Let us help you reach your marketing goals.
           </div>
           <button className="text-white bg-secondaryalt md:text-base max-md:self-center text-sm rounded-md cursor-pointer px-8 py-3 mt-4"
           onClick={scrollToContact}
@@ -186,10 +186,10 @@ export default function Hero() {
             Get Started
           </button>
         </div>
-        <div className="w-full lg:w-[40%] self-center">
+        <div className="w-full lg:w-[40%] max-w-full self-center">
           <img
             src={`/heroImage.svg`}
-            className="object-cover  "
+            className="object-contain w-full h-auto max-h-[450px]"
             />
         </div>
       </div>
