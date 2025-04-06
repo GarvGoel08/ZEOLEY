@@ -11,10 +11,10 @@ const ServiceCard = ({ image, title, description }) => {
           className="w-[50px] h-[50px] self-center "
         />
         <div className="flex flex-col items-start max-md:items-center">
-          <h2 className="text-2xl font-semibold max-md:text-center text-black max-md:text-xl max-sm:text-lg">
+          <h2 className="text-2xl font-semibold max-md:text-center text-textblack max-md:text-xl max-sm:text-lg">
             {title}
           </h2>
-          <p className="text-base max-md:text-center max-sm:text-sm  text-black max-md:text-base">
+          <p className="text-base max-md:text-center max-sm:text-sm text-textblack max-md:text-base">
             {description}
           </p>
         </div>
