@@ -10,37 +10,37 @@ export default function MarketingSection() {
 
   const marketingSolutions = [
     {
-      icon: <Landmark className="h-10 w-10 text-amber-500" />,
+      icon: <Landmark className="h-10 w-10 text-secondaryalt" />,
       title: "BFSI",
       content:
         "Data-driven marketing that builds trust, enhances customer engagement, and drives conversions in the financial sector.",
     },
     {
-      icon: <Gamepad2 className="h-10 w-10 text-amber-500" />,
+      icon: <Gamepad2 className="h-10 w-10 text-secondaryalt" />,
       title: "iGaming",
       content:
         "Targeted campaigns that boost player acquisition, retention, and engagement with real-time insights and precision marketing.",
     },
     {
-      icon: <Car className="h-10 w-10 text-amber-500" />,
+      icon: <Car className="h-10 w-10 text-secondaryalt" />,
       title: "Automobile",
       content:
         "Accelerate brand visibility and drive sales with hyper-personalized digital strategies tailored for the auto industry.",
     },
     {
-      icon: <ShoppingCart className="h-10 w-10 text-amber-500" />,
+      icon: <ShoppingCart className="h-10 w-10 text-secondaryalt" />,
       title: "E-Commerce",
       content:
         "Optimize customer journeys, increase conversions, and maximize ROI with performance-driven e-commerce marketing.",
     },
     {
-      icon: <Home className="h-10 w-10 text-amber-500" />,
+      icon: <Home className="h-10 w-10 text-secondaryalt" />,
       title: "Real Estate",
       content:
         "Capture high-intent buyers and investors with data-backed targeting and lead-generation strategies that deliver results.",
     },
     {
-      icon: <ShoppingBag className="h-10 w-10 text-amber-500" />,
+      icon: <ShoppingBag className="h-10 w-10 text-secondaryalt"/>,
       title: "FMCG",
       content:
         "Drive brand awareness, customer loyalty, and sales through high-impact, data-driven marketing strategies.",
@@ -62,11 +62,8 @@ export default function MarketingSection() {
       backgroundSize: "cover",
       backgroundPosition: "center",
     }}>
-    {/* White overlay */}
     <div className="absolute inset-0 bg-white opacity-90"></div>
-      {/* Marketing Solutions Section */}
-      <section >
-    
+      <section>
         <div className="relative container mx-auto">
           <h2 className="text-3xl md:text-5xl font-semibold text-primary text-center mb-16">
             Smart Marketing Solutions for Every Market

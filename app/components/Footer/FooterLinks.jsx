@@ -7,7 +7,7 @@ const FooterLinks = ({ title, links }) => {
       <ul className="flex flex-col gap-5 text-base text-stone-200">
         {links.map((link, index) => (
           <li key={index}>
-            <a href="#" className="hover:text-amber-500 transition-colors">
+            <a href="#" className="hover:text-secondary transition-colors">
               {link}
             </a>
           </li>

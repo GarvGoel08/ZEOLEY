@@ -2,13 +2,14 @@
 
 :root {
   --primary: #2c3e50;
-  --secondary: #ff9900;
-  --secondaryalt: #ff7700;
+  --secondary: #FC4C69;
+  --secondaryalt: #ff2347;
   --tertiary: #ffffff;
 }
 
 html {
   scroll-behavior: smooth;
+  font-family: "Akagi_Pro";
 }
 
 

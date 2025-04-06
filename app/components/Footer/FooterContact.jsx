@@ -30,14 +30,14 @@ const FooterContact = () => {
             {item.type === "phone" ? (
               <a
                 href={`tel:${item.text.replace(/\s+/g, "")}`}
-                className="text-base text-stone-200 hover:text-amber-500 transition-colors"
+                className="text-base text-stone-200 hover:text-secondary transition-colors"
               >
                 {item.text}
               </a>
             ) : item.type === "email" ? (
               <a
                 href={`mailto:${item.text}`}
-                className="text-base text-stone-200 hover:text-amber-500 transition-colors"
+                className="text-base text-stone-200 hover:text-secondary transition-colors"
               >
                 {item.text}
               </a>
