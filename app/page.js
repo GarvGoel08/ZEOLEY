@@ -11,6 +11,12 @@ import OurClients from "./components/OurClients";
 import AdvertiserSection from "./components/AdvertiserSection";
 import WhyZeoley from "./components/WhyZeoley";
 import Footer from "./components/Footer/Footer";
+// import localFont 
+import localFont from "next/font/local"
+
+const akagiPro = localFont({
+  src : './fonnts.com-Akagi_Pro_Medium.otf'
+})
 
 export default function Home() {
   useEffect(() => {
@@ -40,7 +46,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <div className={akagiPro.className}>
       <Hero />
       <AboutUs />
       <Services />

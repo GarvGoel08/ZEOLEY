@@ -15,7 +15,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer id="footer-section" className="px-28 py-10 w-full bg-slate-700 max-md:px-10 max-sm:px-5">
+    <footer id="footer-section" className="px-28 py-10 w-full bg-slate-100 max-md:px-10 max-sm:px-5">
       <div className="flex justify-between max-md:flex-col max-md:gap-10">
         <FooterBranding />
         <FooterLinks title="Company Info" links={companyLinks} />
