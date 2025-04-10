@@ -2,12 +2,12 @@ import React from "react";
 
 const TermsAndConditions = () => {
   return (
-    <div className="max-w-5xl mx-auto pt-30 px-4 py-8 text-gray-800">
+    <div className="max-w-5xl mx-auto pt-30 px-4 py-8 text-textblack">
       <h1 className="text-4xl font-bold mb-6">Zeoley Terms and Conditions</h1>
       
       {/* Section 1 */}
       <section className="mb-6">
-        <h2 className="text-4xl mb-2">1. Definitions</h2>
+        <h2 className="text-2xl font-semibold mb-2">1. Definitions</h2>
         <p className="text-lg"> 
           <strong>Affiliate Program:</strong> A program under which Publishers promote Advertisers.
           <br />
@@ -25,7 +25,7 @@ const TermsAndConditions = () => {
 
       {/* Section 2 */}
       <section className="mb-6">
-        <h2 className="text-4xl mb-2">2. Subject of the Agreement</h2>
+        <h2 className="text-2xl font-semibold mb-2">2. Subject of the Agreement</h2>
         <p className="text-lg">
           These Terms and Conditions govern the relationship between Zeoley and Publishers for
           participating in Affiliate Programs. By registering, the Publisher agrees to be bound
@@ -35,7 +35,7 @@ const TermsAndConditions = () => {
 
       {/* Section 3 */}
       <section className="mb-6">
-        <h2 className="text-4xl mb-2">3. Account Registration and Access</h2>
+        <h2 className="text-2xl font-semibold mb-2">3. Account Registration and Access</h2>
         <p className="text-lg">
           The Publisher must provide accurate and complete information during account registration.
           Zeoley reserves the right to verify this information and suspend accounts for discrepancies
@@ -45,7 +45,7 @@ const TermsAndConditions = () => {
 
       {/* Section 4 */}
       <section className="mb-6">
-        <h2 className="text-4xl mb-2">4. Rights and Obligations of the Publisher</h2>
+        <h2 className="text-2xl font-semibold mb-2">4. Rights and Obligations of the Publisher</h2>
         <ul className="list-disc pl-5 space-y-2 text-lg">
           <li>The Publisher must provide accurate, up-to-date information at all times.</li>
           <li>The Publisher is responsible for account security and must not share credentials.</li>
@@ -66,7 +66,7 @@ const TermsAndConditions = () => {
 
       {/* Section 5 */}
       <section className="mb-6">
-        <h2 className="text-4xl mb-2">5. Prohibited Activities</h2>
+        <h2 className="text-2xl font-semibold mb-2">5. Prohibited Activities</h2>
         <ul className="list-disc pl-5 space-y-2 text-lg">
           <li>Simulating or fabricating Deals using false or unauthorized data.</li>
           <li>Using deceptive or coercive marketing tactics.</li>
@@ -83,7 +83,7 @@ const TermsAndConditions = () => {
 
       {/* Section 6 */}
       <section className="mb-6">
-        <h2 className="text-4xl mb-2">6. Payments to Publishers</h2>
+        <h2 className="text-2xl font-semibold mb-2">6. Payments to Publishers</h2>
         <ul className="list-disc pl-5 space-y-2 text-lg">
           <li>Payment is contingent on valid, tracked, and authorized Deals.</li>
           <li>Publishers must review and accept applicable rates before promotion begins.</li>
@@ -99,7 +99,7 @@ const TermsAndConditions = () => {
 
       {/* Section 7 */}
       <section className="mb-6">
-        <h2 className="text-4xl mb-2">7. Taxes and Invoicing</h2>
+        <h2 className="text-2xl font-semibold mb-2">7. Taxes and Invoicing</h2>
         <ul className="list-disc pl-5 space-y-2 text-lg">
           <li>Service fees are exclusive of applicable indirect taxes, including GST/VAT.</li>
           <li>Publishers must issue invoices within 30 days of initiating a withdrawal, ensuring they comply with GST standards.</li>
@@ -112,7 +112,7 @@ const TermsAndConditions = () => {
 
       {/* Extra Section 8: Termination */}
       <section className="mb-6">
-        <h2 className="text-4xl mb-2">8. Termination</h2>
+        <h2 className="text-2xl font-semibold mb-2">8. Termination</h2>
         <ul className="list-disc pl-5 space-y-2 text-lg">
           <li>Either party may terminate this Agreement for any reason by providing prior written notice.</li>
           <li>Zeoley reserves the right to immediately suspend or terminate a Publisher’s account if any Terms are breached.</li>
@@ -123,7 +123,7 @@ const TermsAndConditions = () => {
 
       {/* Extra Section 9: Limitation of Liability and Disclaimers */}
       <section className="mb-6">
-        <h2 className="text-4xl mb-2">9. Limitation of Liability & Disclaimers</h2>
+        <h2 className="text-2xl font-semibold mb-2">9. Limitation of Liability & Disclaimers</h2>
         <ul className="list-disc pl-5 space-y-2 text-lg">
           <li>Zeoley provides its services on an “as is” basis and makes no warranties regarding uninterrupted, error-free service.</li>
           <li>Zeoley is not liable for any indirect, special, or consequential damages arising from the use or inability to use its services.</li>
@@ -134,7 +134,7 @@ const TermsAndConditions = () => {
 
       {/* Extra Section 10: Governing Law and Dispute Resolution */}
       <section className="mb-6">
-        <h2 className="text-4xl mb-2">10. Governing Law and Dispute Resolution</h2>
+        <h2 className="text-2xl font-semibold mb-2">10. Governing Law and Dispute Resolution</h2>
         <ul className="list-disc pl-5 space-y-2 text-lg">
           <li>This Agreement is governed by and construed in accordance with the laws applicable in the jurisdiction where Zeoley operates.</li>
           <li>Any disputes arising under this Agreement will be subject to the exclusive jurisdiction of the relevant courts.</li>
@@ -144,7 +144,7 @@ const TermsAndConditions = () => {
 
       {/* Extra Section 11: Amendments and Miscellaneous */}
       <section className="mb-6 ">
-        <h2 className="text-4xl mb-2">11. Amendments and Miscellaneous</h2>
+        <h2 className="text-2xl font-semibold mb-2">11. Amendments and Miscellaneous</h2>
         <ul className="list-disc pl-5 space-y-2 text-lg">
           <li>Zeoley reserves the right to amend these Terms at any time. Continued use of the service constitutes acceptance of the updated Terms.</li>
           <li>If any provision of these Terms is found to be unenforceable, the remaining provisions will remain in effect.</li>
@@ -155,7 +155,7 @@ const TermsAndConditions = () => {
 
       {/* Extra Section 12: Contact Information */}
       <section className="mb-6">
-        <h2 className="text-4xl mb-2">12. Contact Information</h2>
+        <h2 className="text-2xl font-semibold mb-2">12. Contact Information</h2>
         <p className="text-lg">
           For any questions or clarifications regarding these Terms, please contact us at: <br />
           <a href="mailto:support@zeoley.com" className="text-blue-600 underline">support@zeoley.com</a>
