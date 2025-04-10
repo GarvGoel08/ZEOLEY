@@ -68,8 +68,8 @@ export default function Hero() {
       id="home"
     >
       <div
-        className={`w-full bg-white fixed gap-2 font-akagi font-bold lg:px-28 px-8 flex justify-between items-center z-50 py-4 transition-all duration-300 delay-100 ease-in-out  ${
-          isNavScrolled ? "py-2 shadow-lg" : "py-5"
+        className={`w-full bg-white fixed gap-2 lg:px-28 px-8 flex justify-between items-center z-50 py-4 transition-all duration-300 delay-100 ease-in-out  ${
+          isNavScrolled ? "py-4 shadow-lg" : "py-6"
         }`}
       >
       <img
@@ -89,7 +89,7 @@ export default function Hero() {
             ].map((item) => (
               <button
                 key={item.id}
-                className={`hover:text-secondary cursor-pointer transition-all duration-300 ease-in-out ${
+                className={`hover:text-secondary cursor-pointer text-lg transition-all duration-300 ease-in-out ${
                   activeSection === item.id ? "text-secondary" : "text-black"
                 } `}
                 onClick={() => {
@@ -102,7 +102,7 @@ export default function Hero() {
             ))}
           </nav>
         </div>
-        <button className="hidden lg:block text-white bg-secondaryalt rounded-lg cursor-pointer px-4 py-2"
+        <button className="hidden lg:block text-white text-lg bg-secondaryalt rounded-lg cursor-pointer px-4 py-2"
         onClick={scrollToContact}
         >
           Get Started
