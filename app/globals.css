@@ -19,7 +19,8 @@ html {
   --color-secondary: var(--secondary);
   --color-secondaryalt: var(--secondaryalt);
   --color-tertiary: var(--tertiary);
-  --font-poppins: "Poppins" , "sans-serif"
+  --font-poppins: "Poppins" , "sans-serif";
+  --font-akagi: "akagiProThin", "Poppins"
 }
 
 

@@ -18,6 +18,10 @@ const akagiPro = localFont({
   src : './fonnts.com-Akagi_Pro_Medium.otf'
 })
 
+const akagiProThin = localFont({
+  src: './fonnts.com-Akagi_Pro_Thin.otf'
+})
+
 export default function Home() {
   useEffect(() => {
     const handleScroll = () => {
