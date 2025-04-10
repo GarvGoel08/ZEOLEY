@@ -57,13 +57,13 @@ export default function Hero() {
       id="home"
     >
       <div
-        className={`w-full bg-white fixed gap-2 font-poppins lg:px-28 px-8 flex justify-between items-center z-50 py-4 transition-all duration-300 delay-100 ease-in-out  ${
+        className={`w-full bg-white fixed gap-2 font-akagi font-bold lg:px-28 px-8 flex justify-between items-center z-50 py-4 transition-all duration-300 delay-100 ease-in-out  ${
           isNavScrolled ? "py-2 shadow-lg" : "py-5"
         }`}
       >
       <img
         src="/logo3.svg"
-        className="w-[100px]"
+        className="w-[120px]"
         />
       
         <div className="hidden lg:flex flex-row">
