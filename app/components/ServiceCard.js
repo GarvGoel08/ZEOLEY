@@ -4,7 +4,7 @@ import React from "react";
 const ServiceCard = ({ image, title, description }) => {
   return (
     <article className="flex justify-center flex-col p-4 md:py-6 shadow-sm hover:shadow-secondary hover:shadow-lg bg-neutral-100 rounded-3xl transition-all duration-300 ease-in-out">
-      <div className="flex just flex-row items-start mb-2 gap-2 md:gap-6 max-sm:flex-col">
+      <div className="flex px-3 just flex-row items-start mb-2 gap-2 md:gap-6 max-sm:flex-col">
         <img
           src={image}
           alt=""
