@@ -185,7 +185,7 @@ export default function Hero() {
       <div className="grow text-white flex pt-20 flex-col lg:flex-row gap-5 mx-auto overflow-hidden">
         <div className="h-full my-auto lg:w-[50%] lg:pr-0 md:px-24 px-8 flex flex-col gap-4 justify-center items-start">
           <div className="md:text-6xl text-3xl font-semibold max-md:text-center text-primary">
-            Maximize Your ROI with Data-Driven Performance Marketing
+            Maximize your ROI with data-driven performance marketing
           </div>
           <div className="md:text-xl text-lg text-secondaryalt max-md:text-center">
             Drive results through smart strategies, optimized campaigns, and

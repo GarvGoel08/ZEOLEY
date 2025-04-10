@@ -10,7 +10,7 @@ const FooterBranding = () => {
 
       />
       <p className="text-base max-w-[298px] text-textblack max-md:max-w-full">
-        Maximize Your ROI with Data-Driven Performance Marketing
+      Maximize your ROI with data-driven performance marketing
       </p>
       <FooterCopyright/>
     </section>

@@ -107,7 +107,7 @@ const ContactForm = () => {
             className="w-4 h-4 rounded-sm bg-[#2c3e50]"
           />
           <label htmlFor="authorize" className="text-sm text-stone-500">
-            I Authorize Zeoley to send notifications via
+            I authorize Zeoley to send notifications via
             SMS/RCS/Call/Email/Whatsapp
           </label>
         </div>
