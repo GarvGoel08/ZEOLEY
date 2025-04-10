@@ -65,7 +65,7 @@ export default function MarketingSection() {
     <div className="absolute inset-0 bg-white opacity-90"></div>
       <section>
         <div className="relative container mx-auto">
-          <h2 className="text-3xl md:text-5xl font-semibold text-primary text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-semibold text-primary text-center mb-16">
             Smart Marketing Solutions for Every Market
           </h2>
 
@@ -78,7 +78,7 @@ export default function MarketingSection() {
                 <div className="flex flex-col items-center text-center">
                   <div className="mb-4 p-3 rounded-full bg-gray-100">{solution.icon}</div>
                   <h3 className="text-xl font-semibold mb-3 text-gray-800">{solution.title}</h3>
-                  <p className="text-gray-600">{solution.content}</p>
+                  <p className="text-gray-600 text-lg">{solution.content}</p>
                 </div>
               </div>
             ))}

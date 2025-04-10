@@ -58,7 +58,7 @@ const ContactForm = () => {
 
   return (
     <div className="grow p-10 bg-white max-md:w-full max-sm:p-5">
-        <h2 className="text-4xl font-bold text-gray-900 mb-8">Contact Us</h2>
+        <h2 className="text-4xl font-semibold text-gray-900 mb-8">Contact Us</h2>
         <form onSubmit={handleSubmit} className="mx-auto my-0 max-w-[782px]">
         <FormInput
           label="Name"
@@ -106,7 +106,7 @@ const ContactForm = () => {
             id="authorize"
             className="w-4 h-4 rounded-sm bg-[#2c3e50]"
           />
-          <label htmlFor="authorize" className="text-xs text-stone-500">
+          <label htmlFor="authorize" className="text-sm text-stone-500">
             I Authorize Zeoley to send notifications via
             SMS/RCS/Call/Email/Whatsapp
           </label>
@@ -114,7 +114,7 @@ const ContactForm = () => {
 
         <button
           type="submit"
-          className="px-8 py-2.5 mx-auto my-0 w-48 text-lg text-white cursor-pointer bg-secondaryalt border-[none] max-sm:w-full"
+          className="px-8 py-2 mx-auto my-0 w-48 text-base text-white cursor-pointer bg-secondaryalt border-[none] max-sm:w-full"
           disabled={loading}
         >
           {loading ? "Sending..." : "Send Message"}

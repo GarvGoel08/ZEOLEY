@@ -9,9 +9,14 @@ export default function Hero() {
   const [activeSection, setActiveSection] = useState("home");
 
   const scrollToContact = () => {
-    const contactSection = document.getElementById("contact");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
+    const section = document.getElementById("contact");
+    if (section) {
+      const offset = 60;
+      const sectionPosition = section.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({
+        top: sectionPosition - offset,
+        behavior: 'smooth',
+      });
     }
   };
 
@@ -22,9 +27,15 @@ export default function Hero() {
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      const offset = 60;
+      const sectionPosition = section.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({
+        top: sectionPosition - offset,
+        behavior: 'smooth',
+      });
     }
   };
+  
 
   useEffect(() => {
     const handleScroll = () => {

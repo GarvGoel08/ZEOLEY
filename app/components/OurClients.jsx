@@ -35,7 +35,7 @@ export default function OurClients(){
 
     return (
         <div>
-            <h2 className="my-12 text-5xl font-semibold text-center text-primary max-md:text-4xl max-sm:mb-8 max-sm:text-3xl">
+            <h2 className="my-12 text-4xl font-semibold text-center text-primary max-md:text-4xl max-sm:mb-8 max-sm:text-3xl">
                 Our Clients
             </h2>
             <div className="flex mx-5 md:mx-20 my-10">

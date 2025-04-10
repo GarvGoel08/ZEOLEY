@@ -45,7 +45,7 @@ const WhyZeoley = () => {
         rel="stylesheet"
       />
       <section id="why-zoeley" className="flex flex-col items-center px-5 py-10 mb-10  bg-white">
-        <h2 className="mb-12 text-5xl font-bold text-center text-primary max-md:text-4xl max-sm:mb-8 max-sm:text-3xl">
+        <h2 className="mb-12 text-4xl font-bold text-center text-primary max-md:text-4xl max-sm:mb-8 max-sm:text-3xl">
           Why Zeoley?
         </h2>
         <div className="flex flex-wrap gap-8 justify-center max-w-[1440px] max-md:gap-5 max-sm:gap-4">

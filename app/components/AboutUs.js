@@ -22,7 +22,7 @@ const AboutUs = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <p className="mb-5 text-base leading-6 text-zinc-700">
+          <p className="mb-5 text-lg leading-6 text-zinc-700">
             We are a performance-driven marketing agency committed to delivering
             measurable results for your business. With a data-first approach, we
             focus on driving conversions, increasing sales, and maximizing your
@@ -39,7 +39,7 @@ const AboutUs = () => {
             <h2 className="text-3xl font-bold leading-10 text-secondary max-md:text-3xl max-sm:text-2xl">
               Our Mission:
             </h2>
-            <p className="text-base leading-6 text-zinc-700">
+            <p className="text-lg leading-6 text-zinc-700">
             We are dedicated to delivering performance marketing solutions that empower brands to grow and achieve sustainable, long-term success. Through data-driven strategies and innovative practices, we help businesses reach their full potential with measurable results.
             </p>
           </div>
@@ -47,7 +47,7 @@ const AboutUs = () => {
             <h2 className="text-3xl font-bold leading-10 text-secondary max-md:text-3xl max-sm:text-2xl">
               Our Approach:
             </h2>
-            <p className="text-base leading-6 text-zinc-700">
+            <p className="text-lg leading-6 text-zinc-700">
             We leverage data analytics, digital tools, and multi-channel marketing to craft high-impact campaigns. By combining paid search, social media, and email marketing, we drive targeted traffic, boost engagement, and nurture leads with personalized campaigns. Through continuous optimization and performance tracking, we ensure maximum ROI and impactful growth.
             </p>
           </div>
