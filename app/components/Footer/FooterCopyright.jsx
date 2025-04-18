@@ -7,7 +7,7 @@ const FooterCopyright = () => {
   return (
     <div className="flex gap-2 items-center text-sm text-textblack">
       <IconSVG svg={copyrightIcon} />
-      <p>2025 ZEOLEY. All rights reserved.</p>
+      <p>2025 Zeoley Global Media Private Limited. All rights reserved.</p>
     </div>
   );
 };
