@@ -176,8 +176,8 @@ const TermsAndConditions = () => {
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed">
               For any questions or clarifications regarding these Terms, please contact us at: <br />
-              <a href="mailto:support@Zeoley Global Media Private Limited.com" className="text-blue-600 underline hover:text-blue-800 transition-colors">
-                support@Zeoley Global Media Private Limited.com
+              <a href="mailto:support@zeoley.com" className="text-blue-600 underline hover:text-blue-800 transition-colors">
+                support@zeoley.com
               </a>
             </p>
           </section>
