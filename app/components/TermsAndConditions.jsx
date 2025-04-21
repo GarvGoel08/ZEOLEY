@@ -18,9 +18,9 @@ const TermsAndConditions = () => {
             <p className="text-lg text-gray-700 leading-relaxed">
               <strong className="text-secondary">Affiliate Program:</strong> A program under which Publishers promote Advertisers.
               <br />
-              <strong className="text-secondary">Advertiser:</strong> An entity offering products or services for promotion through Zeoley Global Media Private Limited.
+              <strong className="text-secondary">Advertiser:</strong> An entity offering products or services for promotion through <b>Zeoley Global Media Private Limited</b>.
               <br />
-              <strong className="text-secondary">Publisher:</strong> Individuals or companies registered with Zeoley Global Media Private Limited to promote Affiliate Programs.
+              <strong className="text-secondary">Publisher:</strong> Individuals or companies registered with <b>Zeoley Global Media Private Limited</b> to promote Affiliate Programs.
               <br />
               <strong className="text-secondary">Deal:</strong> A user action (purchase, registration, etc.) made through a Publisher's referral.
               <br />
@@ -35,9 +35,9 @@ const TermsAndConditions = () => {
               2. Subject of the Agreement
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed">
-              These Terms and Conditions govern the relationship between Zeoley Global Media Private Limited and Publishers for
+              These Terms and Conditions govern the relationship between <b>Zeoley Global Media Private Limited</b> and Publishers for
               participating in Affiliate Programs. By registering, the Publisher agrees to be bound
-              by these Terms, including any updates published on Zeoley Global Media Private Limited’s website.
+              by these Terms, including any updates published on <b>Zeoley Global Media Private Limited</b>’s website.
             </p>
           </section>
 
@@ -47,7 +47,7 @@ const TermsAndConditions = () => {
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed">
               The Publisher must provide accurate and complete information during account registration.
-              Zeoley Global Media Private Limited reserves the right to verify this information and suspend accounts for discrepancies
+              <b>Zeoley Global Media Private Limited</b> reserves the right to verify this information and suspend accounts for discrepancies
               or violations.
             </p>
           </section>
@@ -62,10 +62,10 @@ const TermsAndConditions = () => {
               <li className="py-1">The Publisher must have the legal rights to use and advertise on their Ad Space.</li>
               <li className="py-1">Advertisements must be clear, truthful, and compliant with applicable laws.</li>
               <li className="py-1">Email marketing must be permission-based with easy opt-out options.</li>
-              <li className="py-1">No actions that disrupt the functioning or security of the Zeoley Global Media Private Limited platform are allowed.</li>
+              <li className="py-1">No actions that disrupt the functioning or security of the <b>Zeoley Global Media Private Limited</b> platform are allowed.</li>
               <li className="py-1">Only one account is allowed per individual or legal entity.</li>
               <li className="py-1">Publishers must adhere to individual program terms and may be subject to suspension for non-compliance.</li>
-              <li className="py-1">Publishers are required to provide documentation or traffic data when requested by Zeoley Global Media Private Limited.</li>
+              <li className="py-1">Publishers are required to provide documentation or traffic data when requested by <b>Zeoley Global Media Private Limited</b>.</li>
               <li className="py-1">Only approved Ad Creatives are permitted; self-created or modified creatives are the Publisher’s responsibility.</li>
               <li className="py-1">Affiliate links must be monitored and updated regularly.</li>
               <li className="py-1">Payment shall only be released after receipt of funds from the Advertiser.</li>
@@ -87,7 +87,7 @@ const TermsAndConditions = () => {
               <li className="py-1">Registering domains that mimic Advertisers’ websites to mislead users.</li>
               <li className="py-1">Attracting traffic that is inconsistent with the declared source.</li>
               <li className="py-1">Closing accounts to avoid settlement of negative balances or debts.</li>
-              <li className="py-1">Zeoley Global Media Private Limited employees must not register as Publishers without proper authorization.</li>
+              <li className="py-1"><b>Zeoley Global Media Private Limited</b> employees must not register as Publishers without proper authorization.</li>
               <li className="py-1">Any violations may result in immediate account suspension, forfeiture of earnings, and a permanent ban.</li>
             </ul>
           </section>
@@ -103,7 +103,7 @@ const TermsAndConditions = () => {
               <li className="py-1">Costs incurred for third-party services or tools are the sole responsibility of the Publisher.</li>
               <li className="py-1">Withdrawal requests are subject to eligibility conditions, including a minimum threshold.</li>
               <li className="py-1">Each party is responsible for its own tax obligations.</li>
-              <li className="py-1">The Publisher must provide accurate payment details; Zeoley Global Media Private Limited is not liable for incorrect information.</li>
+              <li className="py-1">The Publisher must provide accurate payment details; <b>Zeoley Global Media Private Limited</b> is not liable for incorrect information.</li>
               <li className="py-1">Any overpayment must be promptly refunded upon request.</li>
               <li className="py-1">Monthly withdrawal limits may apply for technical, financial, or business-related reasons.</li>
             </ul>
@@ -116,7 +116,7 @@ const TermsAndConditions = () => {
             <ul className="list-disc pl-6 text-lg text-gray-700 space-y-2">
               <li className="py-1">Service fees are exclusive of applicable indirect taxes, including GST/VAT.</li>
               <li className="py-1">Publishers must issue invoices within 30 days of initiating a withdrawal, ensuring they comply with GST standards.</li>
-              <li className="py-1">Invoices must accurately reflect the jurisdiction and be sent to Zeoley Global Media Private Limited’s registered address.</li>
+              <li className="py-1">Invoices must accurately reflect the jurisdiction and be sent to <b>Zeoley Global Media Private Limited</b>’s registered address.</li>
               <li className="py-1">GST reimbursement will be processed only when valid invoices and supporting documentation are provided.</li>
               <li className="py-1">Tax Deducted at Source (TDS) will be applied according to applicable laws, with certificates issued as per statutory guidelines.</li>
               <li className="py-1">Non-compliance with GST regulations may result in adjusted or withheld payments.</li>
@@ -129,8 +129,8 @@ const TermsAndConditions = () => {
             </h2>
             <ul className="list-disc pl-6 text-lg text-gray-700 space-y-2">
               <li className="py-1">Either party may terminate this Agreement for any reason by providing prior written notice.</li>
-              <li className="py-1">Zeoley Global Media Private Limited reserves the right to immediately suspend or terminate a Publisher’s account if any Terms are breached.</li>
-              <li className="py-1">Upon termination, the Publisher must cease using all Zeoley Global Media Private Limited-related services and return or delete confidential information.</li>
+              <li className="py-1"><b>Zeoley Global Media Private Limited</b> reserves the right to immediately suspend or terminate a Publisher’s account if any Terms are breached.</li>
+              <li className="py-1">Upon termination, the Publisher must cease using all <b>Zeoley Global Media Private Limited</b>-related services and return or delete confidential information.</li>
               <li className="py-1">Termination does not relieve the Publisher of any obligations incurred prior to the effective date of termination.</li>
             </ul>
           </section>
@@ -140,10 +140,10 @@ const TermsAndConditions = () => {
               9. Limitation of Liability & Disclaimers
             </h2>
             <ul className="list-disc pl-6 text-lg text-gray-700 space-y-2">
-              <li className="py-1">Zeoley Global Media Private Limited provides its services on an "as is" basis and makes no warranties regarding uninterrupted, error-free service.</li>
-              <li className="py-1">Zeoley Global Media Private Limited is not liable for any indirect, special, or consequential damages arising from the use or inability to use its services.</li>
-              <li className="py-1">In no event shall Zeoley Global Media Private Limited’s total liability exceed the amounts paid to the Publisher under this Agreement.</li>
-              <li className="py-1">The Publisher agrees to indemnify Zeoley Global Media Private Limited from any claims arising from violations of these Terms.</li>
+              <li className="py-1"><b>Zeoley Global Media Private Limited</b> provides its services on an "as is" basis and makes no warranties regarding uninterrupted, error-free service.</li>
+              <li className="py-1"><b>Zeoley Global Media Private Limited</b> is not liable for any indirect, special, or consequential damages arising from the use or inability to use its services.</li>
+              <li className="py-1">In no event shall <b>Zeoley Global Media Private Limited</b>’s total liability exceed the amounts paid to the Publisher under this Agreement.</li>
+              <li className="py-1">The Publisher agrees to indemnify <b>Zeoley Global Media Private Limited</b> from any claims arising from violations of these Terms.</li>
             </ul>
           </section>
 
@@ -152,7 +152,7 @@ const TermsAndConditions = () => {
               10. Governing Law and Dispute Resolution
             </h2>
             <ul className="list-disc pl-6 text-lg text-gray-700 space-y-2">
-              <li className="py-1">This Agreement is governed by and construed in accordance with the laws applicable in the jurisdiction where Zeoley Global Media Private Limited operates.</li>
+              <li className="py-1">This Agreement is governed by and construed in accordance with the laws applicable in the jurisdiction where <b>Zeoley Global Media Private Limited</b> operates.</li>
               <li className="py-1">Any disputes arising under this Agreement will be subject to the exclusive jurisdiction of the relevant courts.</li>
               <li className="py-1">The parties agree to attempt resolution through mediation before pursuing legal action.</li>
             </ul>
@@ -163,10 +163,10 @@ const TermsAndConditions = () => {
               11. Amendments and Miscellaneous
             </h2>
             <ul className="list-disc pl-6 text-lg text-gray-700 space-y-2">
-              <li className="py-1">Zeoley Global Media Private Limited reserves the right to amend these Terms at any time. Continued use of the service constitutes acceptance of the updated Terms.</li>
+              <li className="py-1"><b>Zeoley Global Media Private Limited</b> reserves the right to amend these Terms at any time. Continued use of the service constitutes acceptance of the updated Terms.</li>
               <li className="py-1">If any provision of these Terms is found to be unenforceable, the remaining provisions will remain in effect.</li>
-              <li className="py-1">This Agreement constitutes the entire understanding between Zeoley Global Media Private Limited and the Publisher regarding its subject matter.</li>
-              <li className="py-1">No waiver of any provision will be effective unless made in writing by an authorized representative of Zeoley Global Media Private Limited.</li>
+              <li className="py-1">This Agreement constitutes the entire understanding between <b>Zeoley Global Media Private Limited</b> and the Publisher regarding its subject matter.</li>
+              <li className="py-1">No waiver of any provision will be effective unless made in writing by an authorized representative of <b>Zeoley Global Media Private Limited</b>.</li>
             </ul>
           </section>
 

@@ -16,7 +16,7 @@ const PrivacyPolicy = () => {
               1. Introduction
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Welcome to Zeoley Global Media Private Limited. This Privacy Policy outlines how we collect,
+              Welcome to <b>Zeoley Global Media Private Limited</b>. This Privacy Policy outlines how we collect,
               use, and protect your personal information when you use our
               platform and services.
             </p>
