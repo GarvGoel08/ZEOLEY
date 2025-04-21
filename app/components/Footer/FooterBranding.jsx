@@ -6,7 +6,7 @@ const FooterBranding = () => {
     <section className="flex flex-col gap-3.5">
       <img
       src="/logo3.svg"
-      className="w-[150px] object-fill"
+      className="w-[160px] object-fill"
 
       />
       <p className="text-base max-w-[298px] text-textblack max-md:max-w-full">

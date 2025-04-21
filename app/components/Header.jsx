@@ -22,7 +22,7 @@ function Header() {
 
               <img
                 src="/logo3.svg"
-                className="w-[120px]"
+                className="w-[160px]"
                 />
             </Link>
               

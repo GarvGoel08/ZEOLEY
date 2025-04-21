@@ -74,7 +74,7 @@ export default function Hero() {
       >
       <img
         src="/logo3.svg"
-        className="w-[120px]"
+        className="w-[160px]"
         />
       
         <div className="hidden lg:flex flex-row">
