@@ -11,16 +11,16 @@ import OurClients from "./components/OurClients";
 import AdvertiserSection from "./components/AdvertiserSection";
 import WhyZeoley from "./components/WhyZeoley";
 import Footer from "./components/Footer/Footer";
-// import localFont 
-import localFont from "next/font/local"
+// import localFont
+import localFont from "next/font/local";
 
 const akagiPro = localFont({
-  src : './fonnts.com-Akagi_Pro_Medium.otf'
-})
+  src: "./fonnts.com-Akagi_Pro_Medium.otf",
+});
 
 const akagiProThin = localFont({
-  src: './fonnts.com-Akagi_Pro_Thin.otf'
-})
+  src: "./fonnts.com-Akagi_Pro_Thin.otf",
+});
 
 export default function Home() {
   useEffect(() => {
@@ -39,7 +39,10 @@ export default function Home() {
       });
 
       if (currentSectionId) {
-        history.replaceState({}, "", `#${currentSectionId}`);
+        const currentHash = window.location.hash.replace("#", "");
+        if (currentHash !== currentSectionId) {
+          history.replaceState({}, "", `#${currentSectionId}`);
+        }
       }
     };
 
@@ -54,9 +57,9 @@ export default function Home() {
       <Hero />
       <AboutUs />
       <Services />
-      <AdvertiserSection/>
-      <MarketingSection/>
-      <OurClients/>
+      <AdvertiserSection />
+      <MarketingSection />
+      <OurClients />
       <WhyZeoley />
       <ContactSection />
       <Footer />
