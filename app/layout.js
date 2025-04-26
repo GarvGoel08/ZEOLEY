@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Zeoley",
+  title: "Zeoley Global Media Private Limited",
   description: "Maximize Your ROI with Data-Driven Performance Marketing",
 };
 
